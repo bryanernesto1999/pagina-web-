@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Metodologías de Nombrado: BEM y CamelCase</title>
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    .contenedorPrincipal {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+    }
+
+    .tituloPrincipal {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #004080;
+    }
+
+    .seccion {
+      margin-bottom: 30px;
+    }
+
+    .seccion__titulo {
+      font-size: 1.5em;
+      color: #0066cc;
+      margin-bottom: 10px;
+    }
+
+    .seccion__parrafo {
+      margin-bottom: 10px;
+    }
+
+    .lista {
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    .lista__item {
+      margin-bottom: 5px;
+    }
+
+    .ejemplo {
+      background-color: #f0f8ff;
+      border: 1px dashed #999;
+      padding: 10px;
+      margin: 10px 0;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #888;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="contenedorPrincipal">
+    <h1 class="tituloPrincipal">Metodologías de Nombrado: BEM y camelCase 
+      Aplicación en HTML y CSS - Por Bryan Sabogal Cervantes</h1>
+
+    <section class="seccion">
+      <h2 class="seccion__titulo">¿Qué son las metodologías de nombrado?</h2>
+      <p class="seccion__parrafo">
+        Las metodologías de nombrado en desarrollo web ayudan a mantener el código organizado, predecible y fácil de mantener. Son especialmente útiles al trabajar con CSS y HTML, donde una estructura clara puede evitar conflictos de estilo.
+      </p>
+    </section>
+
+    <section class="seccion">
+      <h2 class="seccion__titulo">BEM (Block Element Modifier)</h2>
+      <p class="seccion__parrafo">
+        BEM es una metodología que divide los nombres de clase en bloques, elementos y modificadores. Esto permite mantener un sistema de clases escalable y reutilizable.
+      </p>
+      <ul class="lista">
+        <li class="lista__item"><strong>Bloque:</strong> Representa un componente independiente.</li>
+        <li class="lista__item"><strong>Elemento:</strong> Parte del bloque que cumple una función específica.</li>
+        <li class="lista__item"><strong>Modificador:</strong> Representa una variación del bloque o elemento.</li>
+      </ul>
+      <div class="ejemplo">
+        &lt;div class="menu"&gt;<br>
+        &nbsp;&nbsp;&lt;ul class="menu__lista"&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="menu__item menu__item--activo"&gt;Inicio&lt;/li&gt;<br>
+        &nbsp;&nbsp;&lt;/ul&gt;<br>
+        &lt;/div&gt;
+      </div>
+    </section>
+
+    <section class="seccion">
+      <h2 class="seccion__titulo">camelCase</h2>
+      <p class="seccion__parrafo">
+        camelCase es una convención de nombrado usada comúnmente en JavaScript, aunque también se puede aplicar a clases CSS. Consiste en escribir las palabras sin espacios y con mayúsculas en cada inicio de palabra después de la primera.
+      </p>
+      <ul class="lista">
+        <li class="lista__item"><strong>Ejemplo:</strong> <code>nombreDeClase</code></li>
+        <li class="lista__item">Fácil de leer y escribir.</li>
+        <li class="lista__item">Menos común en grandes estructuras CSS.</li>
+      </ul>
+      <div class="ejemplo">
+        &lt;div class="tarjetaPrincipal"&gt;<br>
+        &nbsp;&nbsp;&lt;p class="textoDestacado"&gt;Ejemplo camelCase&lt;/p&gt;<br>
+        &lt;/div&gt;
+      </div>
+    </section>
+
+    <section class="seccion">
+      <h2 class="seccion__titulo">Aplicación de conceptos HTML y CSS</h2>
+      <p class="seccion__parrafo">A través de los ejemplos anteriores, se aplican los siguientes conceptos:</p>
+      <ul class="lista">
+        <li class="lista__item">Estructura web: uso de <code>&lt;div&gt;</code>, <code>&lt;h1&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;p&gt;</code>.</li>
+        <li class="lista__item">Propiedades de texto: <code>font-size</code>, <code>color</code>, <code>text-align</code>.</li>
+        <li class="lista__item">Listas: <code>&lt;ul&gt;</code> y <code>&lt;li&gt;</code> con estilos personalizados.</li>
+        <li class="lista__item">Espaciado con <code>margin</code> y <code>padding</code>.</li>
+        <li class="lista__item">Uso de <code>border</code> para resaltar secciones.</li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      Elaborado como parte de una investigación sobre metodologías de nombrado en desarrollo web.
+    </footer>
+  </div>
+</body>
+</html>
