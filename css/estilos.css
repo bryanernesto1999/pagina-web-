@@ -1,0 +1,35 @@
+/* estilo.css */
+
+/* Fondo azul para el head */
+head {
+  background-color: #0073e6; /* Azul brillante */
+}
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.contenedorPrincipal {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+}
+
+.tituloPrincipal {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #004080;
+}
+
+.seccion {
+  margin-bottom: 30px;
+}
